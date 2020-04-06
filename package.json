@@ -17,10 +17,11 @@
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1",
     "typescript": "~3.7.2",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "ejs": "^3.0.2"
   },
   "scripts": {
-    "start": "node src/index.tsx",
+    "start": "react-scripts start",
     "postinstall": "tsc",
     "build": "react-scripts build",
     "test": "react-scripts test",
