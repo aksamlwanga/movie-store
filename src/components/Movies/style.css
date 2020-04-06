@@ -1,0 +1,15 @@
+.movies{
+    display: flex;
+    flex-wrap: wrap;
+}
+.loader{
+position: absolute;
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+top: 0;
+left: 0;
+width: 100vw;
+
+}
