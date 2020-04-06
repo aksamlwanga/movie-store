@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect } from 'react'
 import CircularProgress from '@material-ui/core/CircularProgress';
 import { Movie } from './Movie';
 import './style.css'
@@ -16,7 +16,7 @@ export const Movies: React.FC<Props> = (props) => {
 
     useEffect(() => {
         const promises = series.map(serie => {
-            return fetch(`http://www.omdbapi.com/?s=${encodeURIComponent(serie)}&apikey=${API_KEY}&page=1`)
+            return fetch(`https://www.omdbapi.com/?s=${encodeURIComponent(serie)}&apikey=${API_KEY}&page=1`)
                 .then(res => res.json())
 
         })
